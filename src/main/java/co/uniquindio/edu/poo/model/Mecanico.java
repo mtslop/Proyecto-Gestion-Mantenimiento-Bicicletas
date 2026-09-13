@@ -13,6 +13,7 @@ public class Mecanico {
         this.codigoInterno = codigoInterno;
         this.sueldo = sueldo;
         this.especialidad = especialidad;
+        this.disponible = true;
     }
 
     public void realizarTareasAsignadas() {
