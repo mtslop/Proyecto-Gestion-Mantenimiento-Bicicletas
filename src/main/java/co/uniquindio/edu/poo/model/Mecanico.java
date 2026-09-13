@@ -6,12 +6,14 @@ public class Mecanico {
     private String codigoInterno;
     private double sueldo;
     private String especialidad;
+    private boolean disponible;
 
     public Mecanico(String nombre, String codigoInterno, double sueldo, String especialidad) {
         this.nombre = nombre;
         this.codigoInterno = codigoInterno;
         this.sueldo = sueldo;
         this.especialidad = especialidad;
+        this.disponible = true;
     }
 
     public void realizarTareasAsignadas() {
@@ -51,6 +53,14 @@ public class Mecanico {
 
     public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
     }
 
     @Override
