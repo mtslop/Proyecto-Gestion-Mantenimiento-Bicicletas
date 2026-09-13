@@ -13,6 +13,7 @@ public class InicioController {
     @FXML public void cargarRegistroCliente() { cargar("registroCliente.fxml"); }
     @FXML public void cargarRegistroBicicleta() { cargar("registroBicicleta.fxml"); }
     @FXML public void cargarRegistroMecanico() { cargar("registroMecanico.fxml"); }
+    @FXML public void cargarMecanicosDisponibles() { cargar("mecanicosDisponibles.fxml"); }
     @FXML public void cargarOrdenServicio() { cargar("crearOrdenServicio.fxml"); }
     @FXML public void cargarHistorial() { cargar("historialServicios.fxml"); }
     @FXML public void cargarOrdenesDia() { cargar("buscarOrdenDia.fxml"); }

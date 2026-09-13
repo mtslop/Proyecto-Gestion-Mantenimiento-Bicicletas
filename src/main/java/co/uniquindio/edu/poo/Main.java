@@ -1,6 +1,6 @@
 package co.uniquindio.edu.poo;
 
-import co.uniquindio.edu.poo.model.Taller;
+import co.uniquindio.edu.poo.model.*;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

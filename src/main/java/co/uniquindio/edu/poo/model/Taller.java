@@ -98,6 +98,16 @@ public class Taller {
         return null;
     }
 
+    public List<Mecanico> obtenerMecanicosDisponibles() {
+        List<Mecanico> disponibles = new ArrayList<>();
+        for (Mecanico mecanico : listaMecanicos) {
+            if (mecanico.isDisponible()) {
+                disponibles.add(mecanico);
+            }
+        }
+        return disponibles;
+    }
+
 
     public List<OrdenServicio> buscarOrdenesPorFecha(LocalDate fecha) {
         List<OrdenServicio> ordenesEncontradas = new ArrayList<>();
