@@ -1,17 +1,20 @@
 package co.uniquindio.edu.poo;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+import co.uniquindio.edu.poo.model.Taller;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+import java.io.IOException;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
-        }
+/** Punto de entrada de la aplicación JavaFX basada en FXML. */
+public class Main extends Application {
+    private static final Taller TALLER = new Taller("Taller de Bicicletas");
+    public static Taller getTaller() { return TALLER; }
+    @Override public void start(Stage stage) throws IOException {
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("view/inicio.fxml"));
+        stage.setScene(new Scene(loader.load(), 1050, 680));
+        stage.setMinWidth(900); stage.setMinHeight(600); stage.setTitle("Taller de bicicletas"); stage.show();
     }
+    public static void main(String[] args) { launch(args); }
 }

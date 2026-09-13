@@ -62,7 +62,7 @@ public class Taller {
     }
 
 
-    private OrdenServicio buscarOrdenPorCodigo(String codigoOrden) {
+    public OrdenServicio buscarOrdenPorCodigo(String codigoOrden) {
         for (OrdenServicio orden : listaOrdenesServicio) {
             if (orden.getCodigo().equals(codigoOrden)) {
                 return orden;
