@@ -10,6 +10,9 @@ import java.io.IOException;
 /** Punto de entrada de la aplicación JavaFX basada en FXML. */
 public class Main extends Application {
     private static final Taller TALLER = new Taller("Taller de Bicicletas");
+    static {
+        cargarDatosEjemplo();
+    }
     public static Taller getTaller() { return TALLER; }
 
     /** Datos iniciales para demostrar registros, asignaciones e historial. */
