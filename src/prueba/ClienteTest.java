@@ -1,4 +1,3 @@
-
 import co.uniquindio.edu.poo.model.Bicicleta;
 import co.uniquindio.edu.poo.model.Cliente;
 import co.uniquindio.edu.poo.model.TipoBicicleta;
