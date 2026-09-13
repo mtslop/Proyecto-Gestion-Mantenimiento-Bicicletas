@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="co.uniquindio.edu.poo.controller.OrdenServicioController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="450.0" style="-fx-background-color: #121417;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="50.0" layoutY="20.0" prefHeight="720.0" prefWidth="350.0" spacing="8.0" style="-fx-background-color: #1A1D23; -fx-background-radius: 12px; -fx-padding: 15px;">
+            <children>
+                <Label text="NUEVA ORDEN DE SERVICIO" textFill="#F4F4F6">
+                    <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="2.0" />
+                    </VBox.margin>
+                </Label>
+
+                <Label text="Código de Orden" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtCodigo" promptText="Ej. ORD-001" style="-fx-background-color: #2A2E35; -fx-text-fill: #F4F4F6; -fx-prompt-text-fill: #6C727D; -fx-background-radius: 6px; -fx-padding: 5px;" />
+
+                <Label text="Motivo de Ingreso" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtMotivoIngreso" promptText="Ej. Mantenimiento general " style="-fx-background-color: #2A2E35; -fx-text-fill: #F4F4F6; -fx-prompt-text-fill: #6C727D; -fx-background-radius: 6px; -fx-padding: 5px;" />
+
+                <Label text="Fecha de Ingreso" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtFechaIngreso" promptText="Ej. 2026-06-05" style="-fx-background-color: #2A2E35; -fx-text-fill: #F4F4F6; -fx-prompt-text-fill: #6C727D; -fx-background-radius: 6px; -fx-padding: 5px;" />
+
+                <Label text="Hora de Ingreso" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtHoraIngreso" promptText="Ej. 10:30" style="-fx-background-color: #2A2E35; -fx-text-fill: #F4F4F6; -fx-prompt-text-fill: #6C727D; -fx-background-radius: 6px; -fx-padding: 5px;" />
+
+                <Label text="Diagnóstico" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtDiagnostico" promptText="Ej. Desgaste en pastillas de freno" style="-fx-background-color: #2A2E35; -fx-text-fill: #F4F4F6; -fx-prompt-text-fill: #6C727D; -fx-background-radius: 6px; -fx-padding: 5px;" />
+
+                <Label text="Bicicleta Atendida (Seleccionar)" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="cmbBicicleta" prefHeight="28.0" prefWidth="320.0" style="-fx-background-color: #2A2E35; -fx-mark-color: #FF5722;" />
+
+                <Label text="Mecánico Responsable (Seleccionar)" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="cmbMecanico" prefHeight="28.0" prefWidth="320.0" style="-fx-background-color: #2A2E35; -fx-mark-color: #FF5722;" />
+
+                <Label text="Estado de la Orden" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="11.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="cmbEstado" prefHeight="28.0" prefWidth="320.0" style="-fx-background-color: #2A2E35; -fx-mark-color: #FF5722;" />
+
+                <Button fx:id="btnCrearOrden" mnemonicParsing="false" onAction="#handleCrearOrden" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #FF5722; -fx-text-fill: #F4F4F6; -fx-font-weight: bold; -fx-cursor: hand; -fx-background-radius: 6px;" text="Crear Orden de Servicio">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

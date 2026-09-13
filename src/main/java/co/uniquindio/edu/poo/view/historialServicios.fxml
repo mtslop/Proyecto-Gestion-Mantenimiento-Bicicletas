@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="co.uniquindio.edu.poo.controller.HistorialServiciosController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="650.0" style="-fx-background-color: #121417;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="25.0" layoutY="20.0" prefHeight="560.0" prefWidth="600.0" spacing="12.0" style="-fx-background-color: #1A1D23; -fx-background-radius: 12px; -fx-padding: 20px;">
+            <children>
+                <Label text="HISTORIAL DE SERVICIOS POR BICICLETA" textFill="#F4F4F6">
+                    <font>
+                        <Font name="Segoe UI Bold" size="18.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="5.0" />
+                    </VBox.margin>
+                </Label>
+
+                <Label text="Ingrese el Serial de la Bicicleta" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <TextField fx:id="txtSerialBusqueda" prefHeight="35.0" prefWidth="420.0" promptText="Ej. SN987654321" style="-fx-background-color: #2A2E35; -fx-text-fill: #F4F4F6; -fx-prompt-text-fill: #6C727D; -fx-background-radius: 6px; -fx-padding: 6px;" />
+                        <Button fx:id="btnBuscar" mnemonicParsing="false" onAction="#handleBuscarHistorial" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #FF5722; -fx-text-fill: #F4F4F6; -fx-font-weight: bold; -fx-cursor: hand; -fx-background-radius: 6px;" text="Buscar" />
+                    </children>
+                </HBox>
+
+                <Label text="Órdenes de Servicio Asociadas" textFill="#A0A5AD">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </Label>
+
+                <TableView fx:id="tblHistorial" prefHeight="330.0" prefWidth="560.0" style="-fx-background-color: #2A2E35; -fx-control-inner-background: #2A2E35; -fx-table-cell-border-color: #3A3F47;">
+                    <columns>
+                        <TableColumn fx:id="colCodigo" prefWidth="90.0" text="Código" />
+                        <TableColumn fx:id="colFecha" prefWidth="100.0" text="Fecha" />
+                        <TableColumn fx:id="colMotivo" prefWidth="190.0" text="Motivo de Ingreso" />
+                        <TableColumn fx:id="colEstado" prefWidth="90.0" text="Estado" />
+                        <TableColumn fx:id="colCosto" prefWidth="90.0" text="Costo Total" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

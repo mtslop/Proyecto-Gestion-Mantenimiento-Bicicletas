@@ -62,7 +62,7 @@ public class Taller {
     }
 
 
-    private OrdenServicio buscarOrdenPorCodigo(String codigoOrden) {
+    public OrdenServicio buscarOrdenPorCodigo(String codigoOrden) {
         for (OrdenServicio orden : listaOrdenesServicio) {
             if (orden.getCodigo().equals(codigoOrden)) {
                 return orden;
@@ -75,6 +75,24 @@ public class Taller {
         for (Bicicleta bicicleta : listaBicicletas) {
             if (bicicleta.getSerial().equals(serial)) {
                 return bicicleta;
+            }
+        }
+        return null;
+    }
+
+    public Cliente buscarClientePorId(String id) {
+        for (Cliente cliente : listaClientes) {
+            if (cliente.getId().equals(id)) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+
+    public Mecanico buscarMecanicoPorCodigo(String codigoInterno) {
+        for (Mecanico mecanico : listaMecanicos) {
+            if (mecanico.getCodigoInterno().equals(codigoInterno)) {
+                return mecanico;
             }
         }
         return null;
