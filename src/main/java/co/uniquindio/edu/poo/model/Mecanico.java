@@ -6,6 +6,7 @@ public class Mecanico {
     private String codigoInterno;
     private double sueldo;
     private String especialidad;
+    private boolean disponible;
 
     public Mecanico(String nombre, String codigoInterno, double sueldo, String especialidad) {
         this.nombre = nombre;
