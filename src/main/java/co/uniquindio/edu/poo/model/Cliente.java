@@ -8,12 +8,12 @@ public class Cliente {
 
     private String nombre;
     private String id;
-    private int telefono;
+    private String telefono;
     private String direccion;
     private List<Bicicleta> listaBicicletas;
 
     // Constructor: al crear un cliente se inicializa su lista de bicicletas vacia
-    public Cliente(String nombre, String id, int telefono, String direccion) {
+    public Cliente(String nombre, String id, String telefono, String direccion) {
         this.nombre = nombre;
         this.id = id;
         this.telefono = telefono;
@@ -45,11 +45,11 @@ public class Cliente {
         this.id = id;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 

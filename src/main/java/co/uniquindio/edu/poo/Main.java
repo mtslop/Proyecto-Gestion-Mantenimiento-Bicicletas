@@ -17,10 +17,10 @@ public class Main extends Application {
 
     /** Datos iniciales para demostrar registros, asignaciones e historial. */
     private static void cargarDatosEjemplo() {
-        Cliente ana = new Cliente("Ana María López", "1001001", 300123456, "Calle 10 # 20-15");
-        Cliente juan = new Cliente("Juan David Pérez", "1001002", 301234567, "Carrera 15 # 8-30");
-        Cliente sofia = new Cliente("Sofía Ramírez", "1001003", 302345678, "Calle 25 # 12-08");
-        Cliente carlos = new Cliente("Carlos Gómez", "1001004", 303456789, "Avenida Bolívar # 34-20");
+        Cliente ana = new Cliente("Ana María López", "1001001", "300123456", "Calle 10 # 20-15");
+        Cliente juan = new Cliente("Juan David Pérez", "1001002", "301234567", "Carrera 15 # 8-30");
+        Cliente sofia = new Cliente("Sofía Ramírez", "1001003", "302345678", "Calle 25 # 12-08");
+        Cliente carlos = new Cliente("Carlos Gómez", "1001004", "303456789", "Avenida Bolívar # 34-20");
         TALLER.registrarCliente(ana); TALLER.registrarCliente(juan);
         TALLER.registrarCliente(sofia); TALLER.registrarCliente(carlos);
 
