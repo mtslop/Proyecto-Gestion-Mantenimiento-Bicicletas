@@ -55,6 +55,14 @@ public class Mecanico {
         this.especialidad = especialidad;
     }
 
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+
     @Override
     public String toString() {
         return "Mecanico [nombre=" + nombre + ", codigoInterno=" + codigoInterno
