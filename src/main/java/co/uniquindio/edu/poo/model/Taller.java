@@ -80,6 +80,24 @@ public class Taller {
         return null;
     }
 
+    public Cliente buscarClientePorId(String id) {
+        for (Cliente cliente : listaClientes) {
+            if (cliente.getId().equals(id)) {
+                return cliente;
+            }
+        }
+        return null;
+    }
+
+    public Mecanico buscarMecanicoPorCodigo(String codigoInterno) {
+        for (Mecanico mecanico : listaMecanicos) {
+            if (mecanico.getCodigoInterno().equals(codigoInterno)) {
+                return mecanico;
+            }
+        }
+        return null;
+    }
+
 
     public List<OrdenServicio> buscarOrdenesPorFecha(LocalDate fecha) {
         List<OrdenServicio> ordenesEncontradas = new ArrayList<>();
