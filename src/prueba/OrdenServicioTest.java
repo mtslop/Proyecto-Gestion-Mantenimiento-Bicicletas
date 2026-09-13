@@ -1,5 +1,3 @@
-package co.uniquindio.edu.poo.prueba;
-
 import co.uniquindio.edu.poo.model.Bicicleta;
 import co.uniquindio.edu.poo.model.EstadoOrden;
 import co.uniquindio.edu.poo.model.OrdenServicio;
